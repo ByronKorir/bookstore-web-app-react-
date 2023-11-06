@@ -1,0 +1,14 @@
+#single-book{
+   min-height: 70vh;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 5%;
+   background-color: rgb(26, 7, 7);
+   color: azure;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 3%;
+}
+#image img{
+   height: 65vh;
+}

@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <div>
       <Navbar/>
-        <div id='outlet'>
+        <div id='outlet' className='mb-0 pb-4'>
           <Outlet/>
         </div>
       <Footer/>

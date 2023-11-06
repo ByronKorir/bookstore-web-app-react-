@@ -13,7 +13,7 @@ export default function BookCards() {
       setBooks(data)
      })
    }, [])
-   console.log(books)
+   
    
 
   return (

@@ -8,8 +8,8 @@
        "published_year": "1960",
        "description": " To Kill a Mockingbird | Summary, Characters, Book, & Facts To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and consequences of racism and prejudice, probing how good and evil can coexist within a single community or individual.",
        "genre": "fiction",
-       "price": "650",
-       "stock": 0
+       "price": 650,
+       "stock": 10
      },
      {
        "title": "Into the Wild",
@@ -18,7 +18,7 @@
        "published_year": "1992",
        "description": "",
        "genre": "adventure",
-       "price": "800",
+       "price": 800,
        "stock": 5,
        "id": 2
      },
@@ -29,8 +29,8 @@
        "published_year": "2023",
        "description": "Two women from opposite sides of the country are brought together by violent acts of the same man, and become allies and sisters in arms as they pursue the justice that would otherwise elude them in one of the most acclaimed, highly anticipated thrillers of the year.",
        "genre": "fiction",
-       "price": "600",
-       "stock": "20",
+       "price": 600,
+       "stock": 20,
        "id": 3
      },
      {
@@ -40,7 +40,7 @@
        "published_year": "2001",
        "description": "",
        "genre": "fiction",
-       "price": "1000",
+       "price": 1000,
        "stock": 29,
        "id": 4
      },
@@ -51,8 +51,8 @@
        "published_year": "2025",
        "description": "INSTANT NEW YORK TIMES BESTSELLER • Grumpy Monkey and his jungle friends are trick-or-treating on Halloween amid strange noises and mysterious smells. Along the way, they are reminded that nothing can be scarier than returning home with no treats",
        "genre": "kids",
-       "price": "650",
-       "stock": "54",
+       "price": 650,
+       "stock": 54,
        "id": 5
      },
      {
@@ -62,8 +62,8 @@
        "published_year": "2015",
        "description": "The Last Stop on Market Street: An Instructional Guide for Literature provides lesson plans and activities for this award-winning literary work. This valuable resource guides teachers with ways to add more rigor with complex literature. Text-dependent questions help students analyze the text with higher-order thinking skills, with lessons focused on story elements, vocabulary, and more. ",
        "genre": "kids",
-       "price": "800",
-       "stock": "23",
+       "price": 800,
+       "stock": 23,
        "id": 6
      },
      {
@@ -73,7 +73,7 @@
        "published_year": "1898",
        "description": "Dracula is a novel by Bram Stoker, published in 1897. An epistolary novel, the narrative is related through letters, diary entries, and newspaper articles. It has no single protagonist, but opens with solicitor Jonathan Harker taking a business trip to stay at the castle of a Transylvanian nobleman, Count Dracula",
        "genre": "horror",
-       "price": "1200",
+       "price": 1200,
        "stock": 33,
        "id": 7
      },
@@ -84,8 +84,8 @@
        "published_year": "2003",
        "description": "This thematic history of the world from 1780 to the onset of the First World War reveals that the world was far more 'globalised' at this time than is commonly thought",
        "genre": "historical",
-       "price": "1100",
-       "stock": "34",
+       "price": 1100,
+       "stock": 34,
        "id": 8
      },
      {
@@ -95,8 +95,8 @@
        "published_year": "2021",
        "description": "",
        "genre": "historical",
-       "price": "2500",
-       "stock": "54",
+       "price": 2500,
+       "stock": 54,
        "id": 9
      },
      {
@@ -106,8 +106,8 @@
        "published_year": "2012",
        "description": "Gone Girl is a 2012 crime thriller novel by American writer Gillian Flynn. It was published by Crown Publishing Group in June 2012. The novel was popular and made the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy.",
        "genre": "thriller",
-       "price": "1320",
-       "stock": "65",
+       "price": 1300,
+       "stock": 65,
        "id": 10
      },
      {
@@ -117,8 +117,8 @@
        "published_year": "2022",
        "description": "Every day I clean the Winchesters' beautiful house top to bottom. I collect their daughter from school. And I cook a delicious meal for the whole family before heading up to eat alone in my tiny room on the top floor. I try to ignore how Nina makes a mess just to watch me clean it up.",
        "genre": "thriller",
-       "price": "900",
-       "stock": "43",
+       "price": 900,
+       "stock": 43,
        "id": 11
      }
    ],
