@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import AddBook from './pages/AddBook'
 import About from './pages/About'
 import Contacts from './pages/Contacts'
+import FAQs from './pages/FAQs';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path='/addbook' element={<AddBook/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contacts/>}/>
-          
+          <Route path='/faqs' element={<FAQs/>}/>
 
         </Route>
       </Routes>
