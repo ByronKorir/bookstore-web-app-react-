@@ -1,0 +1,6 @@
+onclicking the image, the bookdescription component should display
+the book description should:
+   -display image on one side
+   -display other descriptions on another
+   -contain the quantity input and buttons
+   -contain add tocart button

@@ -6,6 +6,7 @@ import AddBook from './pages/AddBook'
 import About from './pages/About'
 import Contacts from './pages/Contacts'
 import FAQs from './pages/FAQs';
+import SingleBook from './pages/SingleBook';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/faqs' element={<FAQs/>}/>
-
+          <Route path='books/:id' element={<SingleBook/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
