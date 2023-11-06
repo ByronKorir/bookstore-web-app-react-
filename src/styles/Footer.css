@@ -1,0 +1,9 @@
+#footer-logo{
+   max-height: 60px;
+}
+#footer{
+   margin: none;
+   width:100vw;
+   background-color: rgb(57, 52, 52);
+   color: aliceblue;
+}
