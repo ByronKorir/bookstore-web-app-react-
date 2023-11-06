@@ -1,14 +1,32 @@
-#single-book{
+#main{
    min-height: 70vh;
+   
+   color: rgb(22, 248, 248);
+}
+
+#single-book{
+  
    display: flex;
    justify-content: space-evenly;
    gap: 5%;
-   background-color: rgb(26, 7, 7);
-   color: azure;
+   
    padding-left: 5%;
    padding-right: 5%;
    padding-top: 3%;
 }
 #image img{
    height: 65vh;
+   min-width: 25vw;
+}
+
+#main-des{
+   max-width: 50vw;
+}
+#descriptions{
+   display: flex;
+   justify-content: space-around;
+}
+span{
+   font-style: italic;
+   font-weight: bold;
 }
