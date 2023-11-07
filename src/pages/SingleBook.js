@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import '../styles/SingleBook.css'
 import UpdateBookForm from '../components/UpdateBookForm'
 
@@ -15,10 +15,25 @@ export default function SingleBook() {
          setBook(data)
       })
    }, [editBook])
+
+   //handle delete
+   function handleDeleteBook(id){
+      fetch(` http://localhost:8001/books/${id}`,{
+         method: "DELETE"
+      })
+      .then((res)=>(res.json()))
+      .then((data)=>{
+         
+         alert('book deleted')
+      })
+      .catch((error)=>{
+         console.error('unable to delete book')
+      })
+   }
   
    
   return (
-   <div id='main'>
+   <div id='main ' >
       <div id='single-book' className='mx-auto'>
          <div id='image'>
             <img className='img-fluid' src={book.cover} alt={book.title}/>
@@ -29,11 +44,8 @@ export default function SingleBook() {
                editBook===true? 
                <UpdateBookForm book={book} onEdit={setEditBook}/>
                :
-               <div id='main-des' className='text-start'>
-                  <div id='title-edit'>
+               <div id='main-des' className='text-start bg-dark  p-3'>
                   <h2 ><strong>{book.title}</strong></h2>
-                  <button id='editBtn' type='button' className='bg-success' onClick={()=>setEditBook(true)}>Edit</button>
-                  </div>
                   <p><strong>By:</strong><em>{book.author}</em></p>
                   <p>{book.description}</p>
                   <p>publishYear:{book.published_year}</p>
@@ -54,10 +66,13 @@ export default function SingleBook() {
                </div>
             }
          </div>
-            
-
-         
-         
+      </div>
+      <div className='text-end'>
+      <button id='editBtn' type='button' className='bg-success mx-2' onClick={()=>setEditBook(true)}>Edit</button>
+      
+      <button id='editBtn'onClick={()=>handleDeleteBook(book.id)}  type='submit' className='bg-danger  mx-5' >delete</button>
+      
+      
       </div>
     </div>
   )

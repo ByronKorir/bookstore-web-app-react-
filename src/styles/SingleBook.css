@@ -21,6 +21,8 @@
 
 #main-des{
    max-width: 50vw;
+   min-height: 60vh;
+   color: bisque;
 }
 #descriptions{
    display: flex;
