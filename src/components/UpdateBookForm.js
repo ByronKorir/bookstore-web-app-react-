@@ -9,9 +9,10 @@ const [description, setDescription] = useState(book.description)
 const [genre, setGenre] = useState(book.genre)
 const [price, setPrice] = useState(book.price)
 const [stock, setStock] = useState(book.stock)
-
+console.log(stock)
 //handling patch
 function UpdateBook(id){
+   
    fetch(` http://localhost:8001/books/${id}`,{
       method:"PATCH",
       headers:{
@@ -31,8 +32,10 @@ function UpdateBook(id){
    })
    .then((res)=>res.json())
    .then((data)=>{
+      alert('Book updated')
       onEdit(false)
    })
+   
 
 }
 
@@ -44,25 +47,25 @@ function UpdateBook(id){
       <form>
          <div className="mb-3">
             <label  className="form-label">Title</label>
-            <input required type="text" onChange={(e)=>setTitle(e.target.value)} className="form-control "  value={book.title}/>
+            <input required type="text" onChange={(e)=>setTitle(e.target.value)} className="form-control "  placeholder={book.title}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Author</label>
-            <input required  type="text" onChange={(e)=>setAuthor(e.target.value)} className="form-control"  value={book.author}/>
+            <input required  type="text" onChange={(e)=>setAuthor(e.target.value)} className="form-control"  placeholder={book.author}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Cover-image</label>
-            <input required  type="url" onChange={(e)=>setCover(e.target.value)} className="form-control"  value={book.cover}/>
+            <input required  type="url" onChange={(e)=>setCover(e.target.value)} className="form-control"  placeholder={book.cover}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Description</label>
-            <textarea required  type="text" onChange={(e)=>setDescription(e.target.value)} className="form-control"  value={book.description}/>
+            <textarea required  type="text" onChange={(e)=>setDescription(e.target.value)} className="form-control"  placeholder={book.description}/>
          </div>
          <div className='d-flex'>
             <div className='mb-2'>
                <label  className="form-label text-center">Genre</label>
                <div class="form-floating">
-                  <select required class="form-select" onChange={(e)=>setGenre(e.target.value)} value={book.genre} id="genre" aria-label="Floating label select example">
+                  <select required class="form-select" onChange={(e)=>setGenre(e.target.value)} placeholder={book.genre} id="genre" aria-label="Floating label select example">
                   <option selected></option>
                   <option value="action">action</option>
                   <option value="adventure">adventure</option>
@@ -85,21 +88,27 @@ function UpdateBook(id){
             </div>
             <div className="mb-3 mx-3">
                <label  className="form-label">Publish year</label>
-               <input required  type="text" onChange={(e)=>setPublishYear(e.target.value)} className="form-control"  value={book.published_year}/>
+               <input required  type="text" onChange={(e)=>setPublishYear(e.target.value)} className="form-control"  placeholder={book.published_year}/>
             </div>
          </div>
          <div className='d-flex'>
          <div className="mb-3 mx-3">
             <label  className="form-label">Price</label>
-            <input required  type="number" onChange={(e)=>setPrice(e.target.value)} className="form-control"  value={book.price}/>
+            <input required  type="number" onChange={(e)=>setPrice(e.target.value)} className="form-control"  placeholder={book.price}/>
          </div>
          <div className="mb-3 mx-3">
             <label  className="form-label">Stock</label>
-            <input required  type="number" onChange={(e)=>setStock(e.target.value)} className="form-control"  value={book.stock}/>
+            <input required  type="number" onChange={(e)=>setStock(e.target.value)} className="form-control"  placeholder={book.stock}/>
          </div>
          </div>
          
-         <button onClick={()=>UpdateBook(book.id)} type="submit" className="btn btn-success">Update</button>
+         <button onClick={(e)=>{
+            e.preventDefault()
+            UpdateBook(book.id)
+         }} 
+         type="submit"
+          className="btn btn-success"
+          >Update</button>
       </form>
     </div>
   )
