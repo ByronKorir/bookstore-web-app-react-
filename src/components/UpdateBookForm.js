@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function UpdateBookForm({book}) {
+export default function UpdateBookForm({book, onEdit}) {
 const [title, setTitle] = useState(book.title)
 const [author, setAuthor] = useState(book.author)
 const [cover, setCover] = useState(book.cover)
@@ -10,6 +10,32 @@ const [genre, setGenre] = useState(book.genre)
 const [price, setPrice] = useState(book.price)
 const [stock, setStock] = useState(book.stock)
 
+//handling patch
+function UpdateBook(id){
+   fetch(` http://localhost:8001/books/${id}`,{
+      method:"PATCH",
+      headers:{
+         "Accept":"application/json",
+         "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+         title:title,
+         author:author,
+         cover:cover,
+         published_year:publishYear,
+         description:description,
+         genre:genre,
+         price:price,
+         stock:stock
+      })
+   })
+   .then((res)=>res.json())
+   .then((data)=>{
+      onEdit(false)
+   })
+
+}
+
 
   return (
    
@@ -18,25 +44,25 @@ const [stock, setStock] = useState(book.stock)
       <form>
          <div className="mb-3">
             <label  className="form-label">Title</label>
-            <input required type="text" className="form-control "  value={book.title}/>
+            <input required type="text" onChange={(e)=>setTitle(e.target.value)} className="form-control "  value={book.title}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Author</label>
-            <input required  type="text" className="form-control"  value={book.author}/>
+            <input required  type="text" onChange={(e)=>setAuthor(e.target.value)} className="form-control"  value={book.author}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Cover-image</label>
-            <input required  type="url" className="form-control"  value={book.cover}/>
+            <input required  type="url" onChange={(e)=>setCover(e.target.value)} className="form-control"  value={book.cover}/>
          </div>
          <div className="mb-3">
             <label  className="form-label">Description</label>
-            <textarea required  type="text" className="form-control"  value={book.description}/>
+            <textarea required  type="text" onChange={(e)=>setDescription(e.target.value)} className="form-control"  value={book.description}/>
          </div>
          <div className='d-flex'>
-            <div>
+            <div className='mb-2'>
                <label  className="form-label text-center">Genre</label>
                <div class="form-floating">
-                  <select required class="form-select" value={book.genre} id="genre" aria-label="Floating label select example">
+                  <select required class="form-select" onChange={(e)=>setGenre(e.target.value)} value={book.genre} id="genre" aria-label="Floating label select example">
                   <option selected></option>
                   <option value="action">action</option>
                   <option value="adventure">adventure</option>
@@ -59,21 +85,21 @@ const [stock, setStock] = useState(book.stock)
             </div>
             <div className="mb-3 mx-3">
                <label  className="form-label">Publish year</label>
-               <input required  type="text" className="form-control"  value={book.published_year}/>
+               <input required  type="text" onChange={(e)=>setPublishYear(e.target.value)} className="form-control"  value={book.published_year}/>
             </div>
          </div>
          <div className='d-flex'>
          <div className="mb-3 mx-3">
             <label  className="form-label">Price</label>
-            <input required  type="number" className="form-control"  value={book.price}/>
+            <input required  type="number" onChange={(e)=>setPrice(e.target.value)} className="form-control"  value={book.price}/>
          </div>
          <div className="mb-3 mx-3">
             <label  className="form-label">Stock</label>
-            <input required  type="number" className="form-control"  value={book.stock}/>
+            <input required  type="number" onChange={(e)=>setStock(e.target.value)} className="form-control"  value={book.stock}/>
          </div>
          </div>
          
-         <button type="submit" className="btn btn-success">Update</button>
+         <button onClick={()=>UpdateBook(book.id)} type="submit" className="btn btn-success">Update</button>
       </form>
     </div>
   )

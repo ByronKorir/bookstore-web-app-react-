@@ -14,7 +14,7 @@ export default function SingleBook() {
       .then((data)=>{
          setBook(data)
       })
-   }, [])
+   }, [editBook])
   
    
   return (
@@ -27,7 +27,7 @@ export default function SingleBook() {
          <div>
             {
                editBook===true? 
-               <UpdateBookForm book={book}/>
+               <UpdateBookForm book={book} onEdit={setEditBook}/>
                :
                <div id='main-des' className='text-start'>
                   <div id='title-edit'>
