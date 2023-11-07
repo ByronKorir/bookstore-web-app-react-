@@ -35,3 +35,7 @@ span{
    display: flex;
    justify-content: space-between;
 }
+#editBtn{
+   border: 2px;
+   border-radius: 30%;
+}

@@ -32,10 +32,11 @@ export default function SingleBook() {
                <div id='main-des' className='text-start'>
                   <div id='title-edit'>
                   <h2 ><strong>{book.title}</strong></h2>
-                  <button type='button' className='bg-success' onClick={()=>setEditBook(true)}>Edit</button>
+                  <button id='editBtn' type='button' className='bg-success' onClick={()=>setEditBook(true)}>Edit</button>
                   </div>
                   <p><strong>By:</strong><em>{book.author}</em></p>
                   <p>{book.description}</p>
+                  <p>publishYear:{book.published_year}</p>
                   <div id='descriptions'>
                      <p>Genre:<span >{book.genre}</span></p>
                      <p>Price: ksh/=<span >{book.price}</span></p>

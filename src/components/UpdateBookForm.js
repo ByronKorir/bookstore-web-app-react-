@@ -9,7 +9,7 @@ const [description, setDescription] = useState(book.description)
 const [genre, setGenre] = useState(book.genre)
 const [price, setPrice] = useState(book.price)
 const [stock, setStock] = useState(book.stock)
-console.log(stock)
+
 //handling patch
 function UpdateBook(id){
    
@@ -71,7 +71,7 @@ function UpdateBook(id){
                   <option value="adventure">adventure</option>
                   <option value="anime">anime</option>
                   <option value="comedy">comedy</option>
-                  <option value="document">documentary</option>
+                  <option value="documentary">documentary</option>
                   <option value="drama">drama</option>
                   <option value="education">education</option>
                   <option value="fantasy">fantasy</option>

@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <div>
       <Navbar/>
-        <div id='outlet' className='mb-0 pb-4'>
+        <div id='outlet' className='pt-3 pb-2'>
           <Outlet/>
         </div>
       <Footer/>

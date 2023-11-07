@@ -120,6 +120,72 @@
       "price": 900,
       "stock": 43,
       "id": 11
+    },
+    {
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "cover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXpMQrczN9rJFL3Vs9zAKSr7rYuEIZKGSd4LjLI5vfug70DlVq",
+      "published_year": "2005",
+      "description": "The Girl with the Dragon Tattoo is a psychological thriller novel by Swedish author and journalist Stieg Larsson. It was published posthumously in 2005, translated into English in 2008, and became an international bestseller. The Girl with the Dragon Tattoo is the first book of the Millennium series.",
+      "genre": "mystery",
+      "price": "1200",
+      "stock": "13",
+      "id": 12
+    },
+    {
+      "title": "Bluebird, Bluebird",
+      "author": "Darren Matthews",
+      "cover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRogffA8-X_xco4dS6oZ62NisrrypC4vPgVmJg76lcmR-CK011h",
+      "published_year": "2017",
+      "description": "Bluebird, Bluebird is a 2017 novel by Attica Locke. Its main character is an African-American Texas Ranger, Darren Matthews, from the eastern part of the state. He investigates the death of another African-American, a Chicago lawyer named Michael Wright, in the town of Lark.",
+      "genre": "mystery",
+      "price": "780",
+      "stock": "32",
+      "id": 13
+    },
+    {
+      "title": "The First Days of School: How to be an Effective Teacher",
+      "author": " Harry K. Wong, Rosemary T. Wong",
+      "cover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgwZnoIiApPrpDkVbPMwh-lhd30jko63WTNB-xj22DiS9G4cCY",
+      "published_year": "1991",
+      "description": "Over 3 million copies have been sold of the preeminent book on classroom management and teaching for lesson achievement. The book walks a teacher, either novice or veteran, through the most effective ways to begin a school year and continue to become an effective teacher. This is the most basic book on how to teach. ",
+      "genre": "education",
+      "price": "1200",
+      "stock": "5",
+      "id": 14
+    },
+    {
+      "title": "The Fifth Season",
+      "author": "NK Jemisin ",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxioAERqQmt5lQytLuiYi8IFq64wmR3q4WE5v0vPUA-XtIsSiI",
+      "published_year": "2015",
+      "description": "The Fifth Season is a 2015 science fantasy novel by N. K. Jemisin. It was awarded the Hugo Award for Best Novel in 2016. It is the first volume in the Broken Earth series and is followed by The Obelisk Gate and The Stone Sky.",
+      "genre": "fantasy",
+      "price": "1433",
+      "stock": "20",
+      "id": 15
+    },
+    {
+      "title": "Red, White & Royal Blue",
+      "author": "Casey McQuiston",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yIkGslCZkFzGYpkiwmMnAS_8KNJMuM5Zfe-n3EHmWUDRjzHX",
+      "published_year": "2019",
+      "description": "Red, White & Royal Blue is an LGBT romance novel by American author Casey McQuiston, originally published on May 14, 2019, by St Martin's Griffin. It centres on the character of Alex Claremont-Diaz, a first son of the United States, and his romantic relationship with Prince Henry, a British prince.",
+      "genre": "romance",
+      "price": "1190",
+      "stock": "12",
+      "id": 16
+    },
+    {
+      "title": "Guns, Germs, and Steel",
+      "author": "Jared Diamond",
+      "cover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQVeYs3TG270tYOrJrKTJa87cKpWkE9piiJewLAu6FgmpcbVhe",
+      "published_year": "1997",
+      "description": "Guns, Germs, and Steel: The Fates of Human Societies is a 1997 transdisciplinary non-fiction book by the American author Jared Diamond.",
+      "genre": "documentary",
+      "price": "1250",
+      "stock": "15",
+      "id": 17
     }
   ],
   "purchase": [

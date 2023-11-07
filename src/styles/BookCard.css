@@ -1,9 +1,21 @@
 #book-card-cover{
    height: 250px;
+   width: 200px;
+  margin: 5px 10px;
    
 }
 #description{
  display: flex;
  flex-direction: row;
  gap: 20px;
+ align-items: center;
+ margin-bottom: 4%;
+}
+#description p{
+   margin: auto;
+}
+
+#main-container{
+   max-width: fit-content;
+   
 }
