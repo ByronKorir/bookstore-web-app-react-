@@ -21,13 +21,22 @@ export default function SingleBook() {
             <img className='img-fluid' src={book.cover} alt={book.title}/>
          </div>
          <div id='main-des' className='text-start'>
-            <h2 className='text-success'><strong>{book.title}</strong></h2>
+            <h2 ><strong>{book.title}</strong></h2>
             <p><strong>By:</strong><em>{book.author}</em></p>
             <p>{book.description}</p>
             <div id='descriptions'>
-               <p>Genre:<span className='text-success'>{book.genre}</span></p>
-               <p>Price: ksh/=<span className='text-success'>{book.price}</span></p>
-               <p>Available:<span className='text-success'>{book.stock}</span></p>
+               <p>Genre:<span >{book.genre}</span></p>
+               <p>Price: ksh/=<span >{book.price}</span></p>
+               <p>Available:<span >{book.stock}</span></p>
+            </div>
+            <div>
+               <div>
+                  <h4>Quantity</h4>
+               </div>
+               <button class="btn btn-light me-1" type="submit">-</button>
+               <input class="btn btn-light me-1" type="button" value="Input"/>
+               <button class="btn btn-light me-4" type="submit">+</button>
+               <button class="btn btn-light ms-5 bg-success" type="submit">Add to Cart</button>
             </div>
 
          </div>

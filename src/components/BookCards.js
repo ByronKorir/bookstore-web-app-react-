@@ -28,7 +28,7 @@ export default function BookCards() {
             </Link>
             
             <div id='description' className='d-flex'>
-               <p>Genre:<span></span>{book.genre}</p>
+               <p>{book.genre}</p>
                <p>Price:<span>{book.price}</span></p>
             </div>
          </div>

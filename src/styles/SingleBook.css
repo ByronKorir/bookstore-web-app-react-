@@ -1,7 +1,7 @@
 #main{
    min-height: 70vh;
    
-   color: rgb(22, 248, 248);
+   color: rgb(252, 255, 255);
 }
 
 #single-book{
@@ -29,4 +29,5 @@
 span{
    font-style: italic;
    font-weight: bold;
+   color:rgb(221, 31, 2);
 }
