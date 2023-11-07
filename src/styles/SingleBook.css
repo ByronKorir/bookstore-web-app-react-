@@ -29,5 +29,9 @@
 span{
    font-style: italic;
    font-weight: bold;
-   color:rgb(221, 31, 2);
+   color:rgb(127, 255, 133);
+}
+#title-edit{
+   display: flex;
+   justify-content: space-between;
 }
