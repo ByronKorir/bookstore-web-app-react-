@@ -1,0 +1,14 @@
+#contacts{
+   color: bisque;
+   margin-left: 15%;
+   margin-right: 15%;
+   border: none;
+}
+li{
+   display: flex;
+   align-items: start;
+   gap: 10px;
+}
+i{
+   color: rgb(9, 102, 231);
+}

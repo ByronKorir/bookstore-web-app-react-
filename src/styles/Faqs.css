@@ -1,0 +1,18 @@
+#faqs{
+   max-width: 60vw;
+   margin-left: 20%;
+   margin-right: 20%;
+}
+h4{
+   color: black;
+}
+p{
+   color: rgb(4, 2, 2);
+   font-style: italic;
+}
+h6{
+   color: blue;
+}
+h5{
+   color: rgb(10, 10, 210);
+}
