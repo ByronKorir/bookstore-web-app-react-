@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Search() {
   const [searchTerm,setSearchTerm] =useState()
-  const [filteredSearch, setFilteredSearch] = useState([])
+  const [filteredBooks, setFilteredBooks] = useState([])
 
   function handleSearch(){
     fetch("http://localhost:8001/books")
@@ -18,7 +18,7 @@ export default function Search() {
       setFilteredSearch(Search)
     })
   }
-  console.log(filteredSearch)
+  console.log(filteredBooks)
 
   return (
     <form onSubmit={(e)=>{

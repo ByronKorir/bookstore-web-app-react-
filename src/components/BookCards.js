@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 export default function BookCards() {
    const [books, setBooks] = useState([]);
+   // const [filteredBooks, setFilteredBooks] = useState([])
+   // const [searched, setSearched] = useState(false)
 
    useEffect(() => {
      fetch(`http://localhost:8001/books`)
@@ -17,6 +19,7 @@ export default function BookCards() {
    
 
   return (
+   
     <div className='container row mx-auto'>
       {
          books.map((book)=>(
