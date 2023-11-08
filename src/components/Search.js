@@ -30,7 +30,8 @@ export default function Search({setFilteredBooks, onSearch, searched}) {
       e.preventDefault()
       handleSearch()
     }}
-     className="d-flex ">
+    id='searchbar'
+     className="">
       <input onChange={(e)=>{
         setSearchTerm(e.target.value)
         onSearch(!searched)

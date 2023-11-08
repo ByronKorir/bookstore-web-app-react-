@@ -24,6 +24,10 @@
    min-height: 60vh;
    color: bisque;
 }
+#main-des p{
+   
+   color: bisque;
+}
 #descriptions{
    display: flex;
    justify-content: space-around;

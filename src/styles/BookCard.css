@@ -10,9 +10,12 @@
  gap: 20px;
  align-items: center;
  margin-bottom: 4%;
+ 
 }
 #description p{
    margin: auto;
+   font-style: italic;
+   color: rgb(1, 204, 5);
 }
 
 #main-container{
@@ -24,12 +27,12 @@
    height: 50px;
    justify-content: space-between;
    align-items: center;
-   background-color: rgb(61, 60, 56);
+   background-color: rgb(74, 74, 74);
    color: beige;
    margin-left: 20%;
    margin-right: 20%;
    border-radius: 5%;
-   padding: 15px 10px;
+   padding: 10px 30px;
 }
 #searchbar button{
    height: 40px;
