@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
+import ReceiptForm from './ReceiptForm'
 
 export default function Transactions({available, book, price, id}) {
    const [quantity, setQuantity] =useState(1)
    const [total, setTotal] = useState()
-   const [valid, setValid] = useState(false)
+   const [valid, setValid] = useState(true)
    const [remainingStock, setRemainingStock] = useState()
 
    function handleBookPurchase(id){
@@ -13,6 +14,7 @@ export default function Transactions({available, book, price, id}) {
          setTotal(amount)
          const stockLeft = parseInt(available)-parseInt(quantity)
          setRemainingStock(stockLeft)
+
       }
       else if(quantity>available){
          alert(`sorry we only have ${available} books left`)
@@ -23,17 +25,25 @@ export default function Transactions({available, book, price, id}) {
 
   return (
    <div>
+   {
+      valid?
+      <ReceiptForm/>
+      :
+   
       <div>
-         <h4>Quantity</h4>
+         <div>
+            <h4>Quantity</h4>
+         </div>
+            <button onClick={()=>setQuantity(quantity-1)} class="btn btn-light me-1" type="button">-</button>
+            <input class="btn btn-light me-1" type="button" value={quantity}/>
+            <button onClick={()=>setQuantity(quantity+1)}  class="btn btn-light me-4" type="button">+</button>
+            <button 
+            onClick={()=>handleBookPurchase(id)}
+            class="btn btn-light ms-5 bg-success" 
+            type="button"
+            >Buy</button>
       </div>
-         <button onClick={()=>setQuantity(quantity-1)} class="btn btn-light me-1" type="button">-</button>
-         <input class="btn btn-light me-1" type="button" value={quantity}/>
-         <button onClick={()=>setQuantity(quantity+1)}  class="btn btn-light me-4" type="button">+</button>
-         <button 
-         onClick={()=>handleBookPurchase(id)}
-         class="btn btn-light ms-5 bg-success" 
-         type="button"
-         >Buy</button>
+   }
    </div>
   )
 }
