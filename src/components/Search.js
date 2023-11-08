@@ -15,7 +15,7 @@ export default function Search() {
           || book.author===searchTerm || book.author.toLowerCase()===searchTerm
         )
       })
-      setFilteredSearch(Search)
+      setFilteredBooks(Search)
     })
   }
   console.log(filteredBooks)

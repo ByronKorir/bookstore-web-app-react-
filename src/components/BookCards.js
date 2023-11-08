@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../styles/BookCard.css'
 import { Link } from 'react-router-dom';
+import Search from './Search';
 
 
 export default function BookCards() {
@@ -19,7 +20,8 @@ export default function BookCards() {
    
 
   return (
-   
+   <div>
+   <Search/>
     <div className='container row mx-auto'>
       {
          books.map((book)=>(
@@ -40,6 +42,7 @@ export default function BookCards() {
          ))
       }
       
+    </div>
     </div>
   )
 }
