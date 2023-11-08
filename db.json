@@ -1,4 +1,4 @@
- {
+{
   "books": [
     {
       "id": 1,
@@ -142,17 +142,6 @@
       "price": "780",
       "stock": "32",
       "id": 13
-    },
-    {
-      "title": "The First Days of School: How to be an Effective Teacher",
-      "author": " Harry K. Wong, Rosemary T. Wong",
-      "cover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgwZnoIiApPrpDkVbPMwh-lhd30jko63WTNB-xj22DiS9G4cCY",
-      "published_year": "1991",
-      "description": "Over 3 million copies have been sold of the preeminent book on classroom management and teaching for lesson achievement. The book walks a teacher, either novice or veteran, through the most effective ways to begin a school year and continue to become an effective teacher. This is the most basic book on how to teach. ",
-      "genre": "education",
-      "price": "1200",
-      "stock": "5",
-      "id": 14
     },
     {
       "title": "The Fifth Season",

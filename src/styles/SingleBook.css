@@ -25,8 +25,8 @@
    color: bisque;
 }
 #main-des p{
-   
-   color: bisque;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(238, 196, 145);
 }
 #descriptions{
    display: flex;
@@ -34,8 +34,9 @@
 }
 span{
    font-style: italic;
-   font-weight: bold;
-   color:rgb(127, 255, 133);
+   font-family: fantasy;
+   color:rgb(0, 255, 13);
+   margin-left: 5px;
 }
 #title-edit{
    display: flex;
@@ -43,5 +44,11 @@ span{
 }
 #editBtn{
    border: 2px;
-   border-radius: 30%;
+   border-radius: 10%;
+   background-color: rgb(23, 222, 23);
+}
+#deleteBtn{
+   border: 2px;
+   border-radius: 10%;
+   background-color: red;
 }
