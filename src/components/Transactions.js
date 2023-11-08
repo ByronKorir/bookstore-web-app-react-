@@ -1,49 +1,66 @@
-import React, {useState} from 'react'
-import ReceiptForm from './ReceiptForm'
+// import React, {useState, useEffect} from 'react'
 
-export default function Transactions({available, book, price, id}) {
-   const [quantity, setQuantity] =useState(1)
-   const [total, setTotal] = useState()
-   const [valid, setValid] = useState(true)
-   const [remainingStock, setRemainingStock] = useState()
 
-   function handleBookPurchase(id){
-      if(quantity<=available){
-         setValid(true)
-         const amount = parseInt(price)*parseInt(quantity)
-         setTotal(amount)
-         const stockLeft = parseInt(available)-parseInt(quantity)
-         setRemainingStock(stockLeft)
 
-      }
-      else if(quantity>available){
-         alert(`sorry we only have ${available} books left`)
-      }else if(quantity<1){
-         alert('Please make avalid order')
-      }
-   }
-
-  return (
-   <div>
-   {
-      valid?
-      <ReceiptForm/>
-      :
+// export default function Transactions({id}) {
+//    const [quantity, setQuantity] =useState(1)
    
-      <div>
-         <div>
-            <h4>Quantity</h4>
-         </div>
-            <button onClick={()=>setQuantity(quantity-1)} class="btn btn-light me-1" type="button">-</button>
-            <input class="btn btn-light me-1" type="button" value={quantity}/>
-            <button onClick={()=>setQuantity(quantity+1)}  class="btn btn-light me-4" type="button">+</button>
-            <button 
-            onClick={()=>handleBookPurchase(id)}
-            class="btn btn-light ms-5 bg-success" 
-            type="button"
-            >Buy</button>
-      </div>
-   }
-   </div>
-  )
-}
+   
+//    const [book, setBook] = useState([])
+   
+//    const [total, setTotal]= useState()
+
+//    // const [Customer, setCustomer] = useState()
+
+   
+  
+
+//   setTotal(parseInt(book.price)*parseInt(quantity))
+ 
+  
+//    useEffect(() => {
+//      fetch(`http://localhost:8001/books/${id}`)
+//      .then((res)=>res.json())
+//      .then((data)=>{
+//       setBook(data)
+//      })
+//    }, [])
+   
+
+//    function handleBookSelection(id){
+//       if(quantity<=book.stock){
+//          setValid(true)
+
+         
+//       }
+//       else if(quantity>book.stock){
+//          alert(`sorry we only have ${book.stock} books left`)
+//       }else if(quantity<1){
+//          alert('Please make avalid order')
+//       }
+//    }
+
+//   return (
+//    <div>
+  
+   
+//       <div>
+//          <div>
+//             <h4>Quantity</h4>
+//          </div>
+//             <button onClick={()=>setQuantity(quantity-1)} class="btn btn-light me-1" type="button">-</button>
+//             <input class="btn btn-light me-1" type="button" value={quantity}/>
+//             <button onClick={()=>setQuantity(quantity+1)}  class="btn btn-light me-4" type="button">+</button>
+            
+//             <button 
+//             onClick={()=>handleBookSelection(id)}
+//             class="btn btn-light ms-5 bg-success" 
+//             type="button"
+//             >Buy</button>
+            
+            
+//       </div>
+  
+//    </div>
+//   )
+// }

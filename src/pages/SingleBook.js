@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 import '../styles/SingleBook.css'
 import UpdateBookForm from '../components/UpdateBookForm'
 import Transactions from '../components/Transactions'
@@ -55,11 +55,9 @@ export default function SingleBook() {
                      <p>Price: ksh/=<span >{book.price}</span></p>
                      <p>Available:<span >{book.stock}</span></p>
                   </div>
-                  <Transactions
+                  {/* <Transactions
                   id={id}
-                   price={book.price} 
-                   book={book.title} 
-                   available={book.stock}/>
+                  /> */}
                  
                </div>
             }
