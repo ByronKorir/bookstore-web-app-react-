@@ -8,8 +8,8 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-secondary ">
       <div className="container-fluid">
         <div className=" collapse navbar-collapse" id="navbarSupportedContent">
-         <h2 className="navbar-brand me-auto ms-5" >Navbar</h2>
-          <ul className="navbar-nav mx-5 mb-2 mb-lg-0">
+         <h2 className="navbar-brand me-auto ms-5" >BookStore</h2>
+          <ul className="navbar-nav mx-5 mb-2 mb-md-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>

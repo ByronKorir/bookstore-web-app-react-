@@ -6,8 +6,8 @@ import Search from './Search';
 
 export default function BookCards() {
    const [books, setBooks] = useState([]);
-   // const [filteredBooks, setFilteredBooks] = useState([])
-   // const [searched, setSearched] = useState(false)
+   const [filteredBooks, setFilteredBooks] = useState([])
+   const [searched, setSearched] = useState(false)
 
    useEffect(() => {
      fetch(`http://localhost:8001/books`)
@@ -15,16 +15,25 @@ export default function BookCards() {
      .then((data)=>{
       setBooks(data)
      })
-   }, [])
+   },[searched])
    
    
 
   return (
    <div>
-   <Search/>
+      <div id='searchbar'>
+      <>.</>
+        <Search 
+        onSearch={setSearched}
+         searched={searched}
+          setFilteredBooks={setFilteredBooks}
+          />
+          <h5>Cart</h5>
+      </div>
+   
     <div className='container row mx-auto'>
-      {
-         books.map((book)=>(
+      {filteredBooks.length>0?
+         filteredBooks.map((book)=>(
          <div key={book.id} className='col-md-3  text-center'>
             <div id='main-container' className='mb-3  text-center border border-success bg-dark text-light'>
                <Link to={`books/${book.id}`}>
@@ -39,7 +48,26 @@ export default function BookCards() {
                </div>
             </div>
          </div>
+         
          ))
+         :
+         books && books.map((book)=>(
+            <div key={book.id} className='col-md-3  text-center'>
+               <div id='main-container' className='mb-3  text-center border border-success bg-dark text-light'>
+                  <Link to={`books/${book.id}`}>
+                     <div className='pt-1'>
+                        <img id='book-card-cover' className='img-fluid' src={book.cover} alt={book.title}/>
+                     </div>
+                  </Link>
+                  
+                  <div id='description' className='d-flex  cntainer-fluid'>
+                     <p>{book.genre}</p>
+                     <p>Price:<span>{book.price}</span></p>
+                  </div>
+               </div>
+            </div>
+            
+            ))
       }
       
     </div>
