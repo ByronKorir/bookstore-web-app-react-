@@ -67,7 +67,7 @@ export default function SingleBook() {
             }
          </div>
       </div>
-      <div className='text-end'>
+      <div className='text-center'>
       <button id='editBtn' type='button' className='bg-success mx-2' onClick={()=>setEditBook(true)}>Edit</button>
       
       <button id='editBtn'onClick={()=>handleDeleteBook(book.id)}  type='submit' className='bg-danger  mx-5' >delete</button>

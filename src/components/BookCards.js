@@ -21,14 +21,14 @@ export default function BookCards() {
 
   return (
    <div>
-      <div id='searchbar'>
-      <>.</>
+      <div id='searchbar' className='text-center'>
+      
         <Search 
         onSearch={setSearched}
          searched={searched}
           setFilteredBooks={setFilteredBooks}
           />
-          <h5>Cart</h5>
+          
       </div>
    
     <div className='container row mx-auto'>

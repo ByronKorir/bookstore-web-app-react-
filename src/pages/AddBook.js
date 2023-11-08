@@ -11,6 +11,7 @@ export default function AddBook() {
   const [price, setPrice] = useState(0)
   const [stock, setStock] = useState(0)
 
+
   //handling POST
   function addBook(){
     fetch(`http://localhost:8001/books`,{
@@ -85,8 +86,8 @@ export default function AddBook() {
             <div className='mb-2 me-5'>
               <label  className="form-label text-center">Genre</label>
               <div class="form-floating">
-                  <select required class="form-select" onChange={(e)=>setGenre(e.target.value)} placeholder="select genre" >
-                  <option selected></option>
+                  <select required class="form-select" onChange={(e)=>setGenre(e.target.value)}  >
+                  <option selected disabled>select genre</option>
                   <option value="action">action</option>
                   <option value="adventure">adventure</option>
                   <option value="anime">anime</option>

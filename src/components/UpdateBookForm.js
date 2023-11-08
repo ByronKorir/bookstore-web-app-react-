@@ -42,9 +42,9 @@ function UpdateBook(id){
 
   return (
    
-    <div className='card text-dark bg-secondary mt-1'>
-      <h5 className='text-center'>Edit Book</h5>
-      <form>
+    <div className='card text-dark bg-dark mt-1'>
+      <h2 className='text-center text-success'>Edit Book</h2>
+      <form className='ps-3 pe-4 pb-5 pt-2'>
          <div className="mb-3">
             <label  className="form-label">Title</label>
             <input required type="text" onChange={(e)=>setTitle(e.target.value)} className="form-control "  placeholder={book.title}/>
@@ -66,7 +66,7 @@ function UpdateBook(id){
                <label  className="form-label text-center">Genre</label>
                <div class="form-floating">
                   <select required class="form-select" onChange={(e)=>setGenre(e.target.value)} placeholder={book.genre} id="genre" aria-label="Floating label select example">
-                  <option selected></option>
+                  <option selected disabled><strong>select Genre</strong></option>
                   <option value="action">action</option>
                   <option value="adventure">adventure</option>
                   <option value="anime">anime</option>
