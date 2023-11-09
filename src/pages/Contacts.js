@@ -84,12 +84,12 @@ export default function Contacts() {
                   <ul className="list-unstyled mb-0">
                       <li className='d-flex'>
                           <i className="fa fa-map-marker" aria-hidden="true"></i>
-                          <p>San Francisco, CA 94126, USA</p>
+                          <p>Rongai, p.o.Box 94126, nairobi</p>
                       </li>
 
                       <li >
                           <i className="fa fa-phone " aria-hidden="true"></i>
-                          <p>+ 01 234 567 89</p>
+                          <p>+254 742 253 309</p>
                       </li>
 
                       <li className='d-flex'>

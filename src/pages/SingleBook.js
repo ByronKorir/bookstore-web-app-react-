@@ -3,6 +3,7 @@ import {  useParams } from 'react-router-dom'
 import '../styles/SingleBook.css'
 import UpdateBookForm from '../components/UpdateBookForm'
 import Transactions from '../components/Transactions'
+import Swal from 'sweetalert2'
 export default function SingleBook() {
    const {id}= useParams()
    const[book,setBook] = useState([])
@@ -24,7 +25,23 @@ export default function SingleBook() {
       .then((res)=>(res.json()))
       .then((data)=>{
          
-         alert('book deleted')
+         Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+              });
+            }
+          });
       })
       .catch((error)=>{
          console.error('unable to delete book')

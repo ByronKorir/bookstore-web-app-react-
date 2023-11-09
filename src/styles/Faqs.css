@@ -3,17 +3,17 @@
    margin-left: 20%;
    margin-right: 20%;
 }
-h4{
-   color: rgb(28, 94, 18);
+#faqs h4{
+   color: rgb(23, 7, 7);
 }
 p{
    color: rgb(4, 2, 2);
    font-style: italic;
 }
-h6{
-   color: blue;
-}
 h5{
+   color: rgb(34, 34, 72);
+}
+h6{
    color: rgb(10, 10, 210);
 }
 #background{

@@ -1,8 +1,10 @@
 #about{
-   color: rgb(222, 222, 222);
+   color: rgb(90, 73, 73);
    max-width: 45vw;
    height: 72vh; 
 }
 #about p{
    font-family: Georgia, 'Times New Roman', Times, serif;
+   color: beige;
+   font-size: larger;
 }
