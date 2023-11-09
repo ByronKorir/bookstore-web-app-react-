@@ -6,7 +6,7 @@ import Transactions from '../components/Transactions'
 export default function SingleBook() {
    const {id}= useParams()
    const[book,setBook] = useState([])
-   
+   const[onChange, setOnChange] = useState(false)
    const [editBook, setEditBook] = useState(false)
    useEffect(() => {
       fetch(`http://localhost:8001/books/${id}`)
@@ -14,7 +14,7 @@ export default function SingleBook() {
       .then((data)=>{
          setBook(data)
       })
-   }, [editBook])
+   }, [editBook, onChange])
 
    //handle delete
    function handleDeleteBook(id){
@@ -54,9 +54,11 @@ export default function SingleBook() {
                      <p>Price: ksh/=<span >{book.price}</span></p>
                      <p>Available:<span >{book.stock}</span></p>
                   </div>
-                  {/* <Transactions
+                  <Transactions
                   id={id}
-                  /> */}
+                  onChange={onChange}
+                  setOnChange={setOnChange}
+                  />
                  
                </div>
             }

@@ -62,10 +62,15 @@ export default function BookCards() {
                         <img id='book-card-cover' className='img-fluid' src={book.cover} alt={book.title}/>
                      </div>
                   </Link>
-                  
-                  <div id='description' className='d-flex  cntainer-fluid'>
+                  <div>
+                  <div id='description' className='d-flex  container-fluid'>
                      <p>{book.genre}</p>
                      <p>Price:<span>{book.price}</span></p>
+                  </div>
+                  {/* <Link to={`transaction/${book.id}`}> */}
+                  {/* <button>buy</button> */}
+                  {/* </Link> */}
+                 
                   </div>
                </div>
             </div>

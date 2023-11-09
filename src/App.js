@@ -7,7 +7,8 @@ import About from './pages/About'
 import Contacts from './pages/Contacts'
 import FAQs from './pages/FAQs';
 import SingleBook from './pages/SingleBook';
-import ReceiptForm from './components/ReceiptForm';
+
+import Transactions from './components/Transactions';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/faqs' element={<FAQs/>}/>
           <Route path='books/:id' element={<SingleBook/>}/>
-          <Route path='/receipt/:title' element={<ReceiptForm/>}/>
+          {/* <Route path='transaction/:id' element={<Transactions/>}/> */}
         </Route>
       </Routes>
     </BrowserRouter>

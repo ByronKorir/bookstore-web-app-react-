@@ -9,7 +9,7 @@
       "description": " To Kill a Mockingbird | Summary, Characters, Book, & Facts To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and consequences of racism and prejudice, probing how good and evil can coexist within a single community or individual.",
       "genre": "fiction",
       "price": "850",
-      "stock": "100"
+      "stock": 86
     },
     {
       "title": "Into the Wild",
@@ -19,7 +19,7 @@
       "description": "nto the Wild is a 1996 non-fiction book written by Jon Krakauer. It is an expansion of a 9,000-word article by Krakauer on Chris McCandless titled \"Death of an Innocent\", which appeared in the January 1993 issue of Outside.",
       "genre": "adventure",
       "price": 800,
-      "stock": 5,
+      "stock": 2,
       "id": 2
     },
     {
@@ -183,7 +183,8 @@
       "customer": "Njeri",
       "book": "The kite Runner",
       "quantity": 2,
-      "total": 2000
+      "total": 2000,
+      "stock": 96
     }
   ]
 }
