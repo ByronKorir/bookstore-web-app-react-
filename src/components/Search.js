@@ -31,7 +31,7 @@ export default function Search({setFilteredBooks, onSearch, searched}) {
       handleSearch()
     }}
     id='searchbar'
-     className="">
+     className="bg-dark mb-5">
       <input onChange={(e)=>{
         setSearchTerm(e.target.value)
         onSearch(!searched)

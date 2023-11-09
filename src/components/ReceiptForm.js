@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react'
-// import { useParams } from 'react-router-dom'
+
 
 export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange, setOnChange}) {
-  //  const {id} = useParams()
+ 
   const [Customer, setCustomer] = useState()
-  // const [total, setTotal] = useState()
   const [book, setBook] = useState([])
-
   const total= parseInt(book.price)*parseInt(quantity)
   const stockLeft = parseInt(book.stock)-parseInt(quantity)
   console.log(stockLeft)
@@ -67,9 +65,6 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
           })
     }
   }
- 
-
-
   return( 
     <div id='add-book' className='card text-dark bg-dark mt-1'>
     <div id='page-title' className='container '>
@@ -81,8 +76,6 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
       e.preventDefault()
       handleBookPurchase()
       updateBooksDatabase(book.id)
-
-
     }}
     className='p-3'>
         <div className="mb-3">
@@ -111,44 +104,3 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
   )
   
   }
-//           //function to update the purchase database
-//   function handleBookPurchase(){
-    
-//    fetch("http://localhost:8001/purchase",{
-//        method:"POST",
-//        headers:{
-//            "Content-Type":"application/json",
-//            "Accept":"application/json"
-//        },
-//        body:JSON.stringify({
-//            Customer:Customer,
-//            book:book.title,
-//            quantity:quantity,
-//            total:total
-//        })
-//    })
-
-//        .then((res)=>res.json())
-//        .then((data)=>{
-//            alert('book purchased')
-//        })
-//  }
-
-  //function to update booksdatabase
-//   function updateBooksDatabase(id){
-//    fetch("http://localhost:8001/purchase",{
-//        method:"PATCH",
-//        headers:{
-//            "Content-Type":"application/json",
-//            "Accept":"application/json"
-//        },
-//        body:JSON.stringify({
-//            stock:remainingBooks
-//        })
-//    })
-
-//        .then((res)=>res.json())
-//        .then((data)=>{
-//            alert('book purchased successful')
-//        })
-//  }
