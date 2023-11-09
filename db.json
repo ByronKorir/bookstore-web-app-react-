@@ -41,7 +41,7 @@
       "description": "INSTANT NEW YORK TIMES BESTSELLER • Grumpy Monkey and his jungle friends are trick-or-treating on Halloween amid strange noises and mysterious smells. Along the way, they are reminded that nothing can be scarier than returning home with no treats",
       "genre": "kids",
       "price": 650,
-      "stock": 54,
+      "stock": 53,
       "id": 5
     },
     {
@@ -184,7 +184,7 @@
       "description": "\"Getting into U.A. High School was difficult enough, but it was only the beginning of Midoriya's long road toward becoming a superhero. The new students all have amazing powers, and although Midoriya has inherited All Might's abilities, he can barely control them.",
       "genre": "anime",
       "price": "500",
-      "stock": "12",
+      "stock": 11,
       "id": 19
     }
   ],
@@ -258,6 +258,20 @@
       "quantity": 2,
       "total": 2600,
       "id": 10
+    },
+    {
+      "customer": "Jane",
+      "book": "Grumpy Monkey Don't Be Scared",
+      "quantity": 1,
+      "total": 650,
+      "id": 11
+    },
+    {
+      "customer": "Ken",
+      "book": "My Hero Academia, Vol. 2",
+      "quantity": 1,
+      "total": 500,
+      "id": 12
     }
   ]
 }

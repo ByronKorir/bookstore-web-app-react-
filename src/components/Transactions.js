@@ -27,7 +27,7 @@ export default function Transactions({id, onChange, setOnChange}) {
          Swal.fire({
             icon: "error",
             title: "Sorry",
-            text: ` we only have ${book.stock} books left`,
+            text: ` we have ${book.stock} books left`,
             
           });
          
