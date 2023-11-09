@@ -17,16 +17,16 @@ export default function FAQs() {
       <h4>3. How long will it take to receive my order?</h4>
       <p>The delivery time depends on your location and the shipping method chosen. Generally, orders are processed within 1-2 business days. Once shipped, you can expect your order to arrive within 5-10 business days.</p>
 
-      <h4>4. Can I track my order?</h4>
-      <p>Yes, you can track your order by logging into your account on our website. Once your order has been shipped, you will receive a tracking number that you can use to monitor the progress of your delivery.</p>
+      {/* <h4>4. Can I track my order?</h4>
+      <p>Yes, you can track your order by logging into your account on our website. Once your order has been shipped, you will receive a tracking number that you can use to monitor the progress of your delivery.</p> */}
 
-      <h4>5. What if I receive a damaged or incorrect book?</h4>
+      <h4>4. What if I receive a damaged or incorrect book?</h4>
       <p>If you receive a damaged or incorrect book, please contact our customer support team within 7 days of receiving your order. We will gladly assist you in resolving the issue and arranging for a replacement or refund.</p>
 
-      <h4>6. Do you offer international shipping?</h4>
-      <p>Yes, we offer international shipping to select countries. Shipping fees and delivery times may vary depending on the destination. Please refer to our shipping policy for more information.</p>
+      {/* <h4>6. Do you offer international shipping?</h4>
+      <p>Yes, we offer international shipping to select countries. Shipping fees and delivery times may vary depending on the destination. Please refer to our shipping policy for more information.</p> */}
 
-      <h4>7. Can I return or exchange a book?</h4>
+      <h4>5. Can I return or exchange a book?</h4>
       <p>We accept returns or exchanges within 14 days of receiving your order, provided that the book is in its original condition. Please review our returns policy for detailed instructions on how to initiate a return or exchange.</p>
 
       <h6>If you have any other questions or concerns, please don't hesitate to reach out to our customer support team. We are here to assist you!</h6>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
 
 export default function UpdateBookForm({book, onEdit}) {
 const [title, setTitle] = useState(book.title)
@@ -32,7 +33,13 @@ function UpdateBook(id){
    })
    .then((res)=>res.json())
    .then((data)=>{
-      alert('Book updated')
+      Swal.fire({
+         position: "top-end",
+         icon: "success",
+         title: "Your updates have been saved",
+         showConfirmButton: false,
+         timer: 1500
+       });
       onEdit(false)
    })
    

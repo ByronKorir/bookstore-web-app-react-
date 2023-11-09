@@ -4,6 +4,7 @@ import '../styles/About.css'
 export default function About() {
   return (
     <div className='bg-dark'>
+      <h3 id='title' className='text-center'>About us</h3>
       <div id='about' className='container-fluid'>
         <p>Welcome to our online bookstore! We are passionate about books and believe in the power of reading to inspire, educate, and entertain. Our goal is to provide a wide variety of books to our customers, from bestsellers to niche titles, and make them easily accessible through our website.</p>
 

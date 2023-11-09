@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 // import { useParams } from 'react-router-dom'
 import ReceiptForm from './ReceiptForm'
+import Swal from 'sweetalert2'
+import '../styles/Transactions.css'
 
 
 export default function Transactions({id, onChange, setOnChange}) {
@@ -8,16 +10,6 @@ export default function Transactions({id, onChange, setOnChange}) {
    const [book, setBook] = useState([])
    const [quantity, setQuantity] = useState(1)
    const [isValid, setIsValid] = useState(false)
-  
-
-   
-
-   
-  
-
-//   setTotal()
- 
-  
    useEffect(() => {
      fetch(`http://localhost:8001/books/${id}`)
      .then((res)=>res.json())
@@ -32,7 +24,13 @@ export default function Transactions({id, onChange, setOnChange}) {
          setIsValid(true) 
       }
       else if(quantity>book.stock){
-         alert(`sorry we only have ${book.stock} books left`)
+         Swal.fire({
+            icon: "error",
+            title: "Sorry",
+            text: ` we only have ${book.stock} books left`,
+            footer: 'Why do I have this issue?'
+          });
+         alert()
       }else if(quantity<1){
          alert('Please make avalid order')
       }
@@ -59,9 +57,9 @@ export default function Transactions({id, onChange, setOnChange}) {
             <input class="btn btn-light me-1" type="button" value={quantity}/>
             <button onClick={()=>setQuantity(quantity+1)}  class="btn btn-light me-4" type="button">+</button>
             
-            <button 
+            <button id='buyBtn'
             onClick={()=>handleBookSelection()}
-            class="btn btn-light ms-5 bg-success" 
+            class="btn btn-light ms-5 border-success" 
             type="button"
             >Buy</button>
       </div>

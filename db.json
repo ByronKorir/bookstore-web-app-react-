@@ -9,7 +9,7 @@
       "description": " To Kill a Mockingbird | Summary, Characters, Book, & Facts To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and consequences of racism and prejudice, probing how good and evil can coexist within a single community or individual.",
       "genre": "fiction",
       "price": "850",
-      "stock": 85
+      "stock": 20
     },
     {
       "title": "Into the Wild",
@@ -201,6 +201,13 @@
       "quantity": 1,
       "total": 850,
       "id": 5
+    },
+    {
+      "customer": "Lee",
+      "book": "To Kill A MockingBird",
+      "quantity": 1,
+      "total": 850,
+      "id": 6
     }
   ]
 }

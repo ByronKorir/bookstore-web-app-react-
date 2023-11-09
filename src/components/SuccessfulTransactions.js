@@ -4,7 +4,7 @@ import '../styles/SuccessfulTransactions.css'
 export default function SuccessfulTransactions() {
    const [transactions, setTransactions]= useState([])
 let grandTotal = 0
-transactions.map((item)=>{
+transactions && transactions.map((item)=>{
    return grandTotal +=item.total
 })
 console.log(grandTotal)
@@ -34,7 +34,7 @@ console.log(grandTotal)
          </thead>
          <tbody className='text-success text-center'>
             {
-               transactions.map((item)=>(
+               transactions && transactions.map((item)=>(
                   <tr key={item.id}>
                      <th scope="row">{item.id}</th>
                      <td>{item && item.customer}</td>

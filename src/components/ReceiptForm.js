@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react'
+import Swal from 'sweetalert2'
+import '../styles/AddBook.css'
 
 
 export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange, setOnChange}) {
@@ -33,11 +35,21 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
            .then((res)=>res.json())
            .then((data)=>{
             setIsValid(false)
-              
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "the transaction is a success",
+                showConfirmButton: false,
+                timer: 1500
+              });
                setOnChange(!onChange)
            })
            .catch((error)=>{
-            alert('Transaction unsuccessful')
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "unable to reach the server!",
+              });
            })
      }
 
@@ -60,15 +72,22 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
 
           .then((res)=>res.json())
           .then((data)=>{
-              alert('book purchased')
+              
               setOnChange(!onChange)
           })
+          .catch((error)=>{
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "unable to reach the server!",
+              });
+           })
     }
   }
   return( 
-    <div id='add-book' className='card text-dark bg-dark mt-1'>
+    <div id='add-book' className=' card text-dark bg-dark mt-1'>
     <div id='page-title' className='container '>
-        <h4 className='text-center bg-dark text-success'>Receipt</h4>
+        <h4 className='text-center bg-dark '>Order Receipt</h4>
     </div>
     
     <form 

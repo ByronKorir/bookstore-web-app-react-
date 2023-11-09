@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Search.css'
+import Swal from 'sweetalert2'
 
 export default function Search({setFilteredBooks, onSearch, searched}) {
   const [searchTerm,setSearchTerm] =useState()
@@ -17,7 +18,12 @@ export default function Search({setFilteredBooks, onSearch, searched}) {
         )
       })
       if(search.length<1){
-        alert('No match found')
+        Swal.fire({
+          position: "top",
+          title: "No match found",
+          showConfirmButton: false,
+          timer: 1500
+        });
         onSearch(!searched)
       }
       setFilteredBooks(search)

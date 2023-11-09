@@ -5,5 +5,8 @@
    margin: none;
    width:100vw;
    background-color: rgb(51, 47, 47);
-   color: aliceblue;
+  
+}
+#footer li{
+   color: bisque;
 }

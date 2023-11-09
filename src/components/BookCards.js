@@ -33,7 +33,7 @@ export default function BookCards() {
    
     <div className='container row mx-auto'>
       {filteredBooks.length>0?
-         filteredBooks.map((book)=>(
+         filteredBooks && filteredBooks.map((book)=>(
          <div key={book.id} className='col-md-3  text-center'>
             <div id='main-container' className='mb-3  text-center border border-success bg-dark text-light'>
                <Link to={`books/${book.id}`}>

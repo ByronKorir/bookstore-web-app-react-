@@ -33,9 +33,7 @@ export default function AddBook() {
     })
     .then((res)=>res.json())
     .then((data)=>{
-        alert('book added')
-    })
-    //clearing form
+      //clearing form
     setTitle("")
     setAuthor('')
     setCover('')
@@ -44,6 +42,13 @@ export default function AddBook() {
     setGenre('')
     setPrice(0)
     setStock(0)
+      Swal.fire({
+        title: "Successfully!",
+        text: "book has been successfully added!",
+        icon: "success"
+      });
+    })
+    
   }
   // console.log(title)
   // console.log(author)
