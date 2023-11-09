@@ -20,7 +20,7 @@ export default function Transactions({id, onChange, setOnChange}) {
    
 
    function handleBookSelection(){
-      if(quantity<=book.stock){
+      if(quantity<=book.stock && quantity>0){
          setIsValid(true) 
       }
       else if(quantity>book.stock){
@@ -28,11 +28,17 @@ export default function Transactions({id, onChange, setOnChange}) {
             icon: "error",
             title: "Sorry",
             text: ` we only have ${book.stock} books left`,
-            footer: 'Why do I have this issue?'
+            
           });
-         alert()
-      }else if(quantity<1){
-         alert('Please make avalid order')
+         
+      }
+       if(quantity < 1){
+         Swal.fire({
+            icon: "error",
+            title: "Sorry",
+            text: ` please make a valid order`,
+            
+          });
       }
    }
 

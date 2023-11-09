@@ -30,7 +30,7 @@
       "description": "The Kite Runner is the first novel by Afghan-American author Khaled Hosseini. Published in 2003 by Riverhead Books, it tells the story of Amir, a young boy from the Wazir Akbar Khan district of Kabul. ",
       "genre": "fiction",
       "price": 1000,
-      "stock": 29,
+      "stock": 24,
       "id": 4
     },
     {
@@ -85,7 +85,7 @@
       "description": "",
       "genre": "historical",
       "price": 2500,
-      "stock": 54,
+      "stock": 44,
       "id": 9
     },
     {
@@ -96,7 +96,7 @@
       "description": "Gone Girl is a 2012 crime thriller novel by American writer Gillian Flynn. It was published by Crown Publishing Group in June 2012. The novel was popular and made the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy.",
       "genre": "thriller",
       "price": 1300,
-      "stock": 65,
+      "stock": 0,
       "id": 10
     },
     {
@@ -164,6 +164,28 @@
       "price": "1250",
       "stock": "15",
       "id": 17
+    },
+    {
+      "title": " Death Note, Vol. 1 (Collector's Edition) Tsugumi Ohba, 2008  Demon Slayer: Kimetsu no Yaiba, Vol. 11 Koyoharu Gotouge, 2018 Demon Slayer: Kimetsu no Yaiba, Vol. 11",
+      "author": "Hajime Isayama",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmOINAfDGtAREYdbS8IFqXF8rgK80CMKfomFQ3GSUEmQFCjKG",
+      "published_year": "2018",
+      "description": "The battle against the powerful sibling demons Gyutaro and Daki is not going well. Although finally able to fight alongside Tanjiro against the monsters, Zenitsu, Inosuke and even the Hashira Tengen Uzui may all be overwhelmed. ",
+      "genre": "anime",
+      "price": "950",
+      "stock": "21",
+      "id": 18
+    },
+    {
+      "title": "My Hero Academia, Vol. 2",
+      "author": "li yeng",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HyigD06b1IxIVpR1761Y5V2HUNIkJ2JywoikvzeAwUTtHqMk",
+      "published_year": "2017",
+      "description": "\"Getting into U.A. High School was difficult enough, but it was only the beginning of Midoriya's long road toward becoming a superhero. The new students all have amazing powers, and although Midoriya has inherited All Might's abilities, he can barely control them.",
+      "genre": "anime",
+      "price": "500",
+      "stock": "12",
+      "id": 19
     }
   ],
   "purchase": [
@@ -208,6 +230,34 @@
       "quantity": 1,
       "total": 850,
       "id": 6
+    },
+    {
+      "customer": "Nicole",
+      "book": "A Life from Beginning to End",
+      "quantity": 5,
+      "total": 12500,
+      "id": 7
+    },
+    {
+      "customer": "Nicole",
+      "book": "A Life from Beginning to End",
+      "quantity": 5,
+      "total": 12500,
+      "id": 8
+    },
+    {
+      "customer": "Nicole",
+      "book": "The Kite Runner",
+      "quantity": 5,
+      "total": 5000,
+      "id": 9
+    },
+    {
+      "customer": "Kelvin",
+      "book": "Gone Girl",
+      "quantity": 2,
+      "total": 2600,
+      "id": 10
     }
   ]
 }

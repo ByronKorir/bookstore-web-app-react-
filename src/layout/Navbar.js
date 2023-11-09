@@ -5,16 +5,16 @@ import '../styles/Navbar.css'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary ">
+    <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container-fluid">
         <div className=" collapse navbar-collapse" id="navbarSupportedContent">
           <ul  className="navbar-nav mx-5 mb-2 mb-md-0">
            
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/addbook">AddBook</Link>
+                <Link className="nav-link active text-light" aria-current="page" to="/addbook">AddBook</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/transactions">Transactions</Link>
+                <Link className="nav-link active " aria-current="page" to="/transactions">Transactions</Link>
               </li>
           </ul>
           <div className='d-flex navbar-brand mx-auto' id='logo'>
