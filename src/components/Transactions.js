@@ -11,7 +11,7 @@ export default function Transactions({id, onChange, setOnChange}) {
    const [quantity, setQuantity] = useState(1)
    const [isValid, setIsValid] = useState(false)
    useEffect(() => {
-     fetch(`http://localhost:8001/books/${id}`)
+     fetch(`https://bookstore-project-react-jnpq.onrender.com/books/${id}`)
      .then((res)=>res.json())
      .then((data)=>{
       setBook(data)

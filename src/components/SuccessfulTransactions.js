@@ -11,7 +11,7 @@ console.log(grandTotal)
 
    
    useEffect(() => {
-     fetch(`http://localhost:8001/purchase`)
+     fetch(`https://bookstore-project-react-jnpq.onrender.com/purchase`)
      .then((res)=>res.json())
      .then((data)=>{
       setTransactions(data)

@@ -7,7 +7,7 @@ export default function Search({setFilteredBooks, onSearch, searched}) {
   
 
   function handleSearch(){
-    fetch("http://localhost:8001/books")
+    fetch("https://bookstore-project-react-jnpq.onrender.com/books")
     .then((res)=>res.json())
     .then((data)=>{
       const search = data && data.filter((book)=>{

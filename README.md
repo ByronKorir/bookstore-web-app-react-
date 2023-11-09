@@ -7,9 +7,14 @@
     - clone the folder to your local machine
     - Open the folder with vs code.
     - Then run `npm run server` to run our server.
-    -in another terminal run `npm start` to open in the browser
+    -in another terminal run: `npm start` to open in the browser
     - And your application is running.
        
+## Live Links
+  ### Deployed backend
+   `https://bookstore-project-react-jnpq.onrender.com`
+   ### Deployed React
+   `https://dynamic-pony-0a6a40.netlify.app/`
 
 ## Known Bugs
    

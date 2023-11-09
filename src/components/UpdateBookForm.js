@@ -14,7 +14,7 @@ const [stock, setStock] = useState(book.stock)
 //handling patch
 function UpdateBook(id){
    
-   fetch(` http://localhost:8001/books/${id}`,{
+   fetch(` https://bookstore-project-react-jnpq.onrender.com/books/${id}`,{
       method:"PATCH",
       headers:{
          "Accept":"application/json",

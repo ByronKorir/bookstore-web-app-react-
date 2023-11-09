@@ -10,7 +10,7 @@ export default function SingleBook() {
    const[onChange, setOnChange] = useState(false)
    const [editBook, setEditBook] = useState(false)
    useEffect(() => {
-      fetch(`http://localhost:8001/books/${id}`)
+      fetch(`https://bookstore-project-react-jnpq.onrender.com/books/${id}`)
       .then((res)=> res.json())
       .then((data)=>{
          setBook(data)
@@ -19,7 +19,7 @@ export default function SingleBook() {
 
    //handle delete
    function handleDeleteBook(id){
-      fetch(` http://localhost:8001/books/${id}`,{
+      fetch(` https://bookstore-project-react-jnpq.onrender.com/books/${id}`,{
          method: "DELETE"
       })
       .then((res)=>(res.json()))

@@ -12,7 +12,7 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
   console.log(stockLeft)
  
   useEffect(() => {
-    fetch(`http://localhost:8001/books/${id}`)
+    fetch(`https://bookstore-project-react-jnpq.onrender.com/books/${id}`)
     .then((res)=>res.json())
     .then((data)=>{
      setBook(data)
@@ -21,7 +21,7 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
 
       // function to update booksdatabase
       function updateBooksDatabase(id){
-       fetch(`http://localhost:8001/books/${id}`,{
+       fetch(`https://bookstore-project-react-jnpq.onrender.com/books/${id}`,{
            method:"PATCH",
            headers:{
                "Content-Type":"application/json",
@@ -56,7 +56,7 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
   //           //function to update the purchase database
    function handleBookPurchase(){
         if(Customer.length>0){
-      fetch("http://localhost:8001/purchase",{
+      fetch("https://bookstore-project-react-jnpq.onrender.com/purchase",{
           method:"POST",
           headers:{
               "Content-Type":"application/json",

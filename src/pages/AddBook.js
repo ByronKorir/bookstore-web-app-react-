@@ -15,7 +15,7 @@ export default function AddBook() {
 
   //handling POST
   function addBook(){
-    fetch(`http://localhost:8001/books`,{
+    fetch(`https://bookstore-project-react-jnpq.onrender.com/books`,{
       method:"POST",
       headers:{
         "Accept": "application/json",
