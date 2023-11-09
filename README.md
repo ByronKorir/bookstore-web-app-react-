@@ -21,11 +21,13 @@
    The application works perfectly well, no bugs.
 
 ## Technologies used
-    - JS
+    - Javascript
     - HTML and CSS
     - Fontawesome
     - BOOTSRAP
-    -React
+    - React
+    - sweetAlert2
+
 
 ## Support and contact details
     - email :byron.korir@student.moringaschool.com
