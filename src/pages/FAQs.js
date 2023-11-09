@@ -3,7 +3,8 @@ import '../styles/Faqs.css'
 
 export default function FAQs() {
   return (
-    <div id='faqs'>
+    <div id='faqs' >
+      <div className='' id='background'>
         <h5>Here are some of the most frequently asked questions;</h5>
 
       <h4>1. How can I place an order?</h4>
@@ -43,6 +44,7 @@ Do you have a physical store I can visit?
 Do you offer discounts or promotions?
 Can I request a specific book that is not listed on your website?
     </div> */}
+    </div>
     </div>
   )
 }

@@ -9,7 +9,7 @@
       "description": " To Kill a Mockingbird | Summary, Characters, Book, & Facts To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and consequences of racism and prejudice, probing how good and evil can coexist within a single community or individual.",
       "genre": "fiction",
       "price": "850",
-      "stock": 86
+      "stock": 85
     },
     {
       "title": "Into the Wild",
@@ -162,7 +162,7 @@
       "description": "Red, White & Royal Blue is an LGBT romance novel by American author Casey McQuiston, originally published on May 14, 2019, by St Martin's Griffin. It centres on the character of Alex Claremont-Diaz, a first son of the United States, and his romantic relationship with Prince Henry, a British prince.",
       "genre": "romance",
       "price": "1190",
-      "stock": "12",
+      "stock": 9,
       "id": 16
     },
     {
@@ -198,6 +198,20 @@
       "quantity": 1,
       "total": 780,
       "id": 3
+    },
+    {
+      "customer": "Beryl",
+      "book": "Red, White & Royal Blue",
+      "quantity": 3,
+      "total": 3570,
+      "id": 4
+    },
+    {
+      "customer": "beryl",
+      "book": "To Kill A MockingBird",
+      "quantity": 1,
+      "total": 850,
+      "id": 5
     }
   ]
 }
