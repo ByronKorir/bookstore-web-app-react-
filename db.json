@@ -183,8 +183,7 @@
       "customer": "Njeri",
       "book": "The kite Runner",
       "quantity": 2,
-      "total": 2000,
-      "stock": 96
+      "total": 2000
     }
   ]
 }

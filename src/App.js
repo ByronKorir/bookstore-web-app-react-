@@ -7,8 +7,7 @@ import About from './pages/About'
 import Contacts from './pages/Contacts'
 import FAQs from './pages/FAQs';
 import SingleBook from './pages/SingleBook';
-
-import Transactions from './components/Transactions';
+import SuccessfulTransactions from './components/SuccessfulTransactions';
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/faqs' element={<FAQs/>}/>
           <Route path='books/:id' element={<SingleBook/>}/>
-          {/* <Route path='transaction/:id' element={<Transactions/>}/> */}
+          <Route path='/transactions' element={<SuccessfulTransactions/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
