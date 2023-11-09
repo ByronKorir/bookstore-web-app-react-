@@ -19,3 +19,19 @@ h4{
    font-weight: 500;
    font-style: inherit;
 }
+#total{
+   margin-left: 20%;
+      margin-right: 20%;
+}
+#total h5{
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#total span{
+color: beige;
+font-size: x-large;
+font-weight: bold;
+
+font-style: italic;background-color: rgb(0, 149, 0);
+}

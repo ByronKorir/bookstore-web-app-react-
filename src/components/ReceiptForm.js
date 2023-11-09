@@ -51,7 +51,7 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
               "Accept":"application/json"
           },
           body:JSON.stringify({
-              Customer:Customer,
+              customer:Customer,
               book:book.title,
               quantity:quantity,
               total:total

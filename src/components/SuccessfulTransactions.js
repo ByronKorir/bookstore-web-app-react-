@@ -3,7 +3,13 @@ import '../styles/SuccessfulTransactions.css'
 
 export default function SuccessfulTransactions() {
    const [transactions, setTransactions]= useState([])
+let grandTotal = 0
+transactions.map((item)=>{
+   return grandTotal +=item.total
+})
+console.log(grandTotal)
 
+   
    useEffect(() => {
      fetch(`http://localhost:8001/purchase`)
      .then((res)=>res.json())
@@ -31,7 +37,7 @@ export default function SuccessfulTransactions() {
                transactions.map((item)=>(
                   <tr key={item.id}>
                      <th scope="row">{item.id}</th>
-                     <td>{item.customer}</td>
+                     <td>{item && item.customer}</td>
                      <td>{item.book}</td>
                      <td>{item.quantity}</td>
                      <td>{item.total}</td>
@@ -41,6 +47,9 @@ export default function SuccessfulTransactions() {
             
          </tbody>
          </table>
+      </div>
+      <div id='total' className='text-end'>
+         <h5>GrandTotal:Ksh/=<span>{grandTotal}</span></h5>
       </div>
     </div>
   )

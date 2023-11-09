@@ -30,7 +30,7 @@
       "description": "Two women from opposite sides of the country are brought together by violent acts of the same man, and become allies and sisters in arms as they pursue the justice that would otherwise elude them in one of the most acclaimed, highly anticipated thrillers of the year.",
       "genre": "fiction",
       "price": 600,
-      "stock": 20,
+      "stock": 16,
       "id": 3
     },
     {
@@ -140,7 +140,7 @@
       "description": "Bluebird, Bluebird is a 2017 novel by Attica Locke. Its main character is an African-American Texas Ranger, Darren Matthews, from the eastern part of the state. He investigates the death of another African-American, a Chicago lawyer named Michael Wright, in the town of Lark.",
       "genre": "mystery",
       "price": "780",
-      "stock": "32",
+      "stock": 31,
       "id": 13
     },
     {
@@ -184,6 +184,20 @@
       "book": "The kite Runner",
       "quantity": 2,
       "total": 2000
+    },
+    {
+      "customer": "Kelly",
+      "book": "Bright Young Women",
+      "quantity": 4,
+      "total": 2400,
+      "id": 2
+    },
+    {
+      "customer": "Byron",
+      "book": "Bluebird, Bluebird",
+      "quantity": 1,
+      "total": 780,
+      "id": 3
     }
   ]
 }
