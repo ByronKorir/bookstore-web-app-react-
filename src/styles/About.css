@@ -1,7 +1,7 @@
 #about{
    color: rgb(90, 73, 73);
    max-width: 45vw;
-   height: 72vh; 
+   min-height: 72vh; 
 }
 #about p{
    font-family: Georgia, 'Times New Roman', Times, serif;

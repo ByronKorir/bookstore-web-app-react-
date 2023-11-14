@@ -32,3 +32,13 @@ form{
 #addBtn{
    background-color: rgb(51, 255, 0) ;
 }
+#quantity{
+   font-size: x-large;
+   font-weight: bold;
+   color: rgb(11, 10, 10);
+}
+#tot{
+   font-size: x-large;
+   font-weight: bold;
+   color: rgb(219, 61, 3);
+}

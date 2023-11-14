@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import Navbar from './Navbar' 
+import Nav2 from './Nav2'
 import '../styles/Layout.css'
 
 export default function Layout() {

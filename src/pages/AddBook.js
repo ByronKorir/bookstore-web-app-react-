@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import '../styles/AddBook.css'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
 
 export default function AddBook() {
   const [title, setTitle] = useState('')
@@ -129,12 +130,14 @@ export default function AddBook() {
             <input required  type="number" onChange={(e)=>setStock(e.target.value)} className="form-control"  placeholder="stock"/>
         </div>
         </div>
+        <Link to={'/'}>
+          <button
+          id='addBtn'
+          type="submit"
+            className="btn "
+            >Add</button>
+        </Link>
         
-        <button
-        id='addBtn'
-        type="submit"
-          className="btn "
-          >Add</button>
       </form>
     </div>
   )

@@ -1,10 +1,13 @@
 import React, { useEffect,useState } from 'react'
-import {  useParams } from 'react-router-dom'
+import {  Link, useParams} from 'react-router-dom'
 import '../styles/SingleBook.css'
 import UpdateBookForm from '../components/UpdateBookForm'
 import Transactions from '../components/Transactions'
 import Swal from 'sweetalert2'
+
+
 export default function SingleBook() {
+   
    const {id}= useParams()
    const[book,setBook] = useState([])
    const[onChange, setOnChange] = useState(false)
@@ -24,7 +27,7 @@ export default function SingleBook() {
       })
       .then((res)=>(res.json()))
       .then((data)=>{
-         
+         setRedirectHome(true)
          Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -42,12 +45,13 @@ export default function SingleBook() {
               });
             }
           });
+          
       })
       .catch((error)=>{
          console.error('unable to delete book')
       })
    }
-  
+   
    
   return (
    <div id='main ' >
@@ -82,11 +86,10 @@ export default function SingleBook() {
          </div>
       </div>
       <div className='text-center'>
-      <button id='editBtn' type='button' className='s mx-2' onClick={()=>setEditBook(true)}>Edit</button>
-      
-      <button id='deleteBtn'onClick={()=>handleDeleteBook(book.id)}  type='submit' className=' mx-5' >delete</button>
-      
-      
+         <button id='editBtn' type='button' className='s mx-2' onClick={()=>setEditBook(true)}>Edit</button>
+         <Link to={'/'}>
+           <button id='deleteBtn'onClick={()=>handleDeleteBook(book.id)}  type='submit' className=' mx-5' >delete</button>
+         </Link>
       </div>
     </div>
   )

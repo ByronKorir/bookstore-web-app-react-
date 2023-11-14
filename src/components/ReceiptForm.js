@@ -107,11 +107,11 @@ export default function ReceiptForm({id, quantity, setIsValid, isValid, onChange
         </div>
         <div className="mb-3">
             <label  className="form-label">Quantity</label>
-            <input required type="button"  className="form-control " value={quantity}/>
+            <input id='quantity' required type="button"  className="form-control " value={quantity}/>
         </div>
         <div className="mb-3">
             <label  className="form-label">Total:</label>
-            <input required  type="button"  className="form-control text-success text-center" value={`ksh/= ${total}`} />
+            <input id='tot' required  type="button"  className="form-control  text-center" value={`ksh/= ${total}`} />
         </div>
         <button
         id='addBtn'
